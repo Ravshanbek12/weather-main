@@ -3,7 +3,6 @@ import 'package:weather/core/failure/failure.dart';
 import 'package:weather/features/weather/domain/entities/weather.dart';
 import 'package:weather/features/weather/domain/repositories/weather_repository.dart';
 
-import '../../../../core/usecase/usecase.dart';
 
 class GetWeatherUseCase {
   final WeatherRepository _weatherRepository;

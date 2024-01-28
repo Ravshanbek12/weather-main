@@ -10,6 +10,6 @@ class WeatherModel {
 
   factory WeatherModel.formJson(Map<String, dynamic> json) {
     return WeatherModel(
-        currentModel: json['current'], locationModel: json['location']);
+        currentModel: CurrentModel.fromJson(json['current']), locationModel: LocationModel.fromJson(json['location']));
   }
 }

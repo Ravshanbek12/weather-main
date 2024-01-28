@@ -15,5 +15,7 @@ class AppColors {
   static const rainyElementsColor = Color(0xFFC9E8E0);
   static const cloudyElementsColor = Color(0xFFF6C8A4);
 
+  AppColors();
+
 
 }

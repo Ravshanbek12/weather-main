@@ -21,6 +21,7 @@ class _WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource{
       }
     }
     catch (error) {
+      print(error);
       throw 'Something went wrong!';
     }
     }

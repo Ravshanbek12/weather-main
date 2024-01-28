@@ -16,9 +16,11 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
     on<WeatherStarted>((event, emit) async{
       emit(WeatherLoading());
       try {
+        print("-----------------Kirdi-------------------------");
         final data = await _weatherRepositoryImpl.getCurrentWeather();
         emit(WeatherSuccess(weatherEntity: data.right));
       }catch (e) {
+        print("error-------------------------$e");
         emit(WeatherFailure(errorMessage: "$e", errorCode: null));
       }
     });
